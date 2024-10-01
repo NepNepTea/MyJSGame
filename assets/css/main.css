@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Comic Sans MS", sans-serif;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: url("../img/bambuk_bg.jpg") center no-repeat;
+    background-size: 100% 100%;
+}
+
+.panel {
+    width: 100%;
+    height: 100%;
+}
+
+.left {
+    width: 40%;
+    height: 100%;
+}
+
+.main {
+    background: #ffe8ba;
+    padding: 5vh;
+    border: 3px solid #000;
+    border-radius: 2em;
+}
+
+.changeName {
+    height: 15vh;
+}
+
+#game {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.info {
+    position: fixed;
+    width: 100%;
+    height: 8vh;
+    z-index: 100;
+    font-size: 1.3em;
+    background: rgba(255, 255, 255, .9);
+}
+
+.elements {
+    width: 100%;
+    height: 100%;
+}
+
+.element {
+    position: absolute;
+}
+
+.player {
+    background: url("../img/player.png") center no-repeat;
+    background-size: contain;
+}
+
+.apple {
+    background: url("../img/apple.png") center no-repeat;
+    background-size: contain;
+}
+
+.orange {
+    background: url("../img/orange.png") center no-repeat;
+    background-size: contain;
+}
+
+.banana {
+    background: url("../img/banana.png") center no-repeat;
+    background-size: contain;
+}
+
+

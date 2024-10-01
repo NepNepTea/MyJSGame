@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Фрукты</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <script defer src="assets/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+<main>
+    <div id="start" class="panel d-flex">
+        <div class="left d-flex justify-content-center align-items-center">
+            <div class="w-75 h-75 main d-flex flex-column justify-content-around align-items-center">
+                <h1 style="font-size: 48px">Фруктосбор</h1>
+                <div class="changeName d-flex flex-column  align-items-center" style="margin-top: -3vh">
+                    <h2>Введите ваше имя:</h2>
+                    <form class="d-flex justify-content-center">
+                        <input type="text" class="form-control" id="nameInput" placeholder="Ваше имя">
+                        <input type="submit" class="btn btn-success" id="startGame" value="Начать"
+                               style="color: #fff; margin-left: 10px">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="game" class="d-none">
+        <div class="info d-flex justify-content-around align-items-center">
+            <div class="d-flex flex-column justify-content-center">
+                <span>Имя игрока: <span id="name">Имя</span></span>
+                <span>Притянуть фрукты(пробел): <span id="skill">Готово</span></span>
+            </div>
+            <div class="d-flex flex-column justify-content-center">
+                <span>Жизни: <span id="hp">3</span></span>
+                <span>Поймано фруктов: <span id="points">0</span></span>
+            </div>
+            <div class="d-flex flex-column justify-content-center">
+                <span>Секундомер: <span id="timer">00:00</span></span>
+            </div>
+        </div>
+        <div class="elements">
+
+        </div>
+    </div>
+    <div id="end" class="panel d-none justify-content-center align-items-center">
+        <div class="w-25 h-50 main">
+            <h2><span id="playerName">Поздравляем, Имя!</span></h2>
+            <h2><span id="endTime">Ваше время: 00:00</span></h2>
+            <h2><span id="collectedFruits">Вы собрали 0 фруктов</span></h2>
+            <h2><span id="congratulation">Вы выиграли!</span></h2>
+            <button id="restart" class="btn btn-success" style="color: #fff">Начать заново</button>
+        </div>
+    </div>
+</main>
+</body>
+</html>
