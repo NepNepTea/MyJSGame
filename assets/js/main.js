@@ -27,8 +27,32 @@ let go = (page, attribute) => {
     })
 }
 
+let checkName = () => {
+    name = $('#nameInput').value.trim();
+    if(name !== '') {
+        $('#startGame').removeAttribute('disabled');
+        localStorage.setItem('userName', name);
+    } else {
+        $('#startGame').setAttribute('disabled', 'disabled');
+    }
+}
+
+let startLoop = () => {
+    let inter = setInterval(() => {
+        if(panel !== "start") clearInterval(inter);
+        checkName();
+    }, 100)
+}
+
+let checkStorage = () => {
+    if(localStorage.getItem('userName') !== null)
+        $('#nameInput').value = localStorage.getItem('userName');
+}
+
 window.onload = () => {
+    checkStorage();
     nav();
+    startLoop();
     let inter = setInterval(() => {
         if(panel === 'game') {
             game = new Game();
