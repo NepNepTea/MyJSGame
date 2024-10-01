@@ -45,8 +45,7 @@ let startLoop = () => {
 }
 
 let checkStorage = () => {
-    if(localStorage.getItem('userName') !== null)
-        $('#nameInput').value = localStorage.getItem('userName');
+    $('#nameInput').value = localStorage.getItem('userName') || '';
 }
 
 window.onload = () => {
