@@ -1,0 +1,18 @@
+header{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 60vw;
+    height: 40px;
+}
+.plus{
+    width: 25px;
+    height: 25px;
+}
+.addNote{
+    width: 25vw;
+}
+.iconBtn{
+    border: none;
+    background-color: transparent;
+}
